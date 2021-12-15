@@ -2570,6 +2570,7 @@ root1.title("Welcome")
 # Images
 logo_image = PhotoImage(file="C:\\Python Project\\ZEITPLAN\\images\\Logo_3.png")
 men_image = PhotoImage(file="C:\\Python Project\\ZEITPLAN\\images\\MEN.png")
+lock_image = PhotoImage(file="C:\\Python Project\\ZEITPLAN\\images\\LOCK.png")
 number_image = PhotoImage(file="C:\\Python Project\\ZEITPLAN\\images\\NUMBERS.png")
 stream_image = PhotoImage(file="C:\\Python Project\\ZEITPLAN\\images\\STREAM.png")
 back_image = PhotoImage(file="C:\\Python Project\\ZEITPLAN\\images\\BACK.png")
@@ -2678,7 +2679,13 @@ intro_semester_entry.grid(row=3, column=1, padx=20)
 
 # labeling Numbers_1 image and Admission_Number
 intro_password_label = Label(
-    info_frame, text="Password", font="ariel 10 bold", fg="white", bg="#441c74"
+    info_frame,
+    text="Password",
+    image=lock_image,
+    compound=LEFT,
+    font="ariel 10 bold",
+    fg="white",
+    bg="#441c74",
 )
 intro_password_label.grid(row=4, column=0)
 # creating "entering" blank for class
